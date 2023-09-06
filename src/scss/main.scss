@@ -1,6 +1,18 @@
 @import "normalize.css";
 @import "./settings/fonts";
+@import "./settings/colors";
+
+@import "home";
+@import "navbar";
 
 body {
   font-family: $font-base;
+}
+
+.main {
+  box-sizing: border-box;
+  max-width: 1900px;
+  width: 100%;
+  padding-right: 148px;
+
 }

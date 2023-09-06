@@ -1,0 +1,21 @@
+@import 'src/scss/settings/colors';
+
+.btn__wrapper {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top: 20px;
+  margin-bottom: 20px;
+}
+.btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: $color-grey;
+  padding: 10px 5px ;
+  &:nth-of-type(2){
+    margin-left: 10px;
+    border: 1px solid $color-yellow;
+  }
+}
