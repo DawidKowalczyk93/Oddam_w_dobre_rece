@@ -1,5 +1,5 @@
 import React from "react";
-import HomeWhatIsAbout from "./WhatIsAbout/HomeWhatIsAbout";
+import HomeWhatIsAbout from "./WhatIsAbout";
 import HomeOrganizations from "./Organizations/HomeOrganizations";
 import HomeAboutUs from "./AboutUs/HomeAboutUs";
 import HomeContact from "./Contact/HomeContact";
