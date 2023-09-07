@@ -3,6 +3,7 @@ import styles from "./HomeHero.module.scss"
 import NavBar from "../../NavBar";
 import decoration from "../../../assets/Decoration.png"
 import LogInOut from "../../LogInOut";
+
 const HomeHero = () => {
 
     return (

@@ -1,19 +1,28 @@
 import React, {Component} from "react";
+import {
+    HashRouter,
+    Route,
+    Routes,
+    Link,
+    NavLink,
+    Outlet, BrowserRouter
+} from 'react-router-dom';
 
-import NavBar from "./components/NavBar";
 import Home from "./components/Home";
-import HomeOrganizations from "./components/HomeOrganizations";
-import HomeAboutUs from "./components/Home/AboutUs/HomeAboutUs";
-import HomeContact from "./components/HomeContact";
-import HomeWhatIsAbout from "./components/HomeWhatIsAbout";
-import LogInOut from "./components/LogInOut";
+import Login from "./components/Login/Login";
 
 function App() {
   return (
     <div className="App">
         <div className='main'>
+            <BrowserRouter>
+                <Routes>
+                    <Route path='/' element={<Home />} />
+                    <Route path='login' element={<Login />} />
+                </Routes>
+            </BrowserRouter>
 
-            <Home />
+
         </div>
 
     </div>

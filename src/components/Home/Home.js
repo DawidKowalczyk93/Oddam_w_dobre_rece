@@ -1,20 +1,25 @@
 import React from "react";
-import HomeWhatIsAbout from "../HomeWhatIsAbout";
-import HomeOrganizations from "../HomeOrganizations";
+import HomeWhatIsAbout from "./WhatIsAbout/HomeWhatIsAbout";
+import HomeOrganizations from "./Organizations/HomeOrganizations";
 import HomeAboutUs from "./AboutUs/HomeAboutUs";
-import HomeContact from "../HomeContact";
+import HomeContact from "./Contact/HomeContact";
 import HomeHero from "./Hero/HomeHero";
+import styles from "./Home.module.scss"
 
 const Home = () => {
 
     return (
-        <div>
-            <HomeHero />
-            {/*<HomeWhatIsAbout />*/}
-            {/*<HomeOrganizations />*/}
-            {/*<HomeAboutUs />*/}
+        <>
+            <div className={styles.hero}>
+                <HomeHero />
+            </div>
+            <HomeWhatIsAbout />
+            <HomeAboutUs />
+            <HomeOrganizations />
+
             {/*<HomeContact />*/}
-        </div>
+        </>
+
     )
 }
 

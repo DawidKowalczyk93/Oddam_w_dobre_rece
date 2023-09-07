@@ -1,0 +1,42 @@
+@import 'src/scss/settings/colors';
+
+.aboutUs {
+  padding-right: 0;
+  margin-bottom: 70px;
+}
+.info {
+
+  &__container {
+    display: flex;
+  }
+  &__col {
+    width: 50%;
+    &:first-of-type {
+      text-align: center;
+      padding-top: 186px;
+      background-color: $color-white;
+    }
+  }
+
+  &__hdl {
+    font-size: 38px;
+    margin-bottom: 26px;
+  }
+  &__text {
+    font-size: 30px;
+    letter-spacing: 0.6px;
+    line-height: 1.7;
+
+  }
+}
+
+.decoration {
+  width: 253px;
+  height: 33px;
+  margin-bottom: 55px;
+}
+.img__people {
+  width: 942px;
+  height: 935px;
+
+}

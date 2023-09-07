@@ -1,0 +1,102 @@
+@import 'src/scss/settings/colors';
+.whatIsAbout {
+  padding-right: 0;
+
+}
+.data {
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    background-image: url(../../../assets/3_Columns_Background.png);
+    margin-bottom: 55px;
+  }
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 46px;
+  }
+  &__hdl {
+    font-size: 90px;
+    color: $color-bronze;
+    margin-bottom: 10px;
+  }
+  &__lead {
+    font-size: 18px;
+    color: $color-dark-grey;
+    margin-bottom: 28px;
+  }
+  &__text {
+    text-align: center;
+    color: $color-dark-grey;
+    margin-bottom: 86px;
+  }
+}
+
+.steps {
+  &__col__wrapper {
+    justify-content: center;
+    display: flex;
+    gap:172px;
+  }
+  &__col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+  &__hdl__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__hdl {
+    font-size: 38px;
+    color: $color-dark-grey;
+    margin-bottom: 38px;
+    text-align: center;
+  }
+  &__lead {
+    font-size: 18px;
+    color: $color-dark-grey;
+    margin-bottom: 28px;
+  }
+  &__text {
+    text-align: center;
+    color: $color-dark-grey;
+    margin-bottom: 86px;
+  }
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid $color-grey;
+    width: 310px;
+    height: 120px;
+    font-size: 28px;
+    font-weight: lighter;
+    color: $color-grey;
+    cursor: pointer;
+  }
+}
+.decoration {
+  width: 253px;
+  height: 33px;
+  margin-bottom: 30px;
+}
+.icon {
+  width: 83px;
+  height: 83px;
+}
+.btn__wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 80px;
+}
