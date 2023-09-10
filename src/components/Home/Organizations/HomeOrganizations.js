@@ -32,15 +32,37 @@ const HomeOrganizations = () => {
                 <div className={styles.org__three__horizontal}>
                     <div className={styles.org__three__col__horizontal}>
                         Fundacja “Dbam o Zdrowie” <br/>
-                        Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.
+                        <div className={styles.org__three__col__horizontal__text}>
+                            <span>
+                                Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.
+                            </span>
+                            <span>
+                                ubrania, jedzenie, sprzęt AGD, meble, zabawki
+                            </span>
+                        </div>
+
                     </div>
                     <div className={styles.org__three__col__horizontal}>
                         Fundacja “Dla dzieci” <br/>
-                        Cel i misja: Pomoc dzieciom z ubogich rodzin.
+                        <div className={styles.org__three__col__horizontal__text}>
+                        <span >
+                            Cel i misja: Pomoc dzieciom z ubogich rodzin.
+                        </span>
+                        <span >
+                            ubrania, meble, zabawki
+                        </span>
+                        </div>
                     </div>
                     <div className={styles.org__three__col__horizontal}>
                         Fundacja “Bez domu” <br/>
-                        Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.
+                        <div className={styles.org__three__col__horizontal__text}>
+                        <span>
+                            Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.
+                        </span>
+                        <span>
+                            ubrania, jedzenie, ciepłe koce
+                        </span>
+                        </div>
                     </div>
                 </div>
 

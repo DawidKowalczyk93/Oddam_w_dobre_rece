@@ -35,7 +35,7 @@
     color: $color-dark-grey;
   }
   &__text {
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 66px;
   }
   &__three__col {
@@ -47,8 +47,14 @@
       text-align: left;
       margin-bottom: 34px;
       padding-bottom: 31px;
+      width: 100%;
       &:nth-of-type(1), &:nth-of-type(2) {
         border-bottom: 1px solid $color-grey;
+      }
+      &__text {
+        display: flex;
+        font-size: 18px;
+        justify-content: space-between;
       }
     }
   }
