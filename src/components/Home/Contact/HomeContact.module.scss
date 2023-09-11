@@ -1,0 +1,93 @@
+@import 'src/scss/settings/colors';
+
+
+
+.contact {
+
+  &__container {
+    display: flex;
+  }
+  &__col {
+    width: 50%;
+    text-align: center;
+    &:nth-of-type(2) {
+      margin-top: 200px;
+    }
+    }
+
+
+  &__hdl {
+    font-size: 38px;
+    margin-bottom: 26px;
+  }
+  &__text {
+    font-size: 30px;
+    letter-spacing: 0.6px;
+    line-height: 1.7;
+
+  }
+}
+
+.decoration {
+  width: 253px;
+  height: 33px;
+  margin-bottom: 55px;
+}
+.img__contact {
+  width: 1900px;
+  height: 1026px;
+
+}
+.form {
+  &__container {
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 528px;
+    width: 100%;
+  }
+  &__data {
+    display: flex;
+    justify-content: center;
+    gap:16px;
+    margin-bottom: 40px;
+  }
+  &__field {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 256px;
+  }
+  &__message {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  &__label {
+    color: $color-dark-grey;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+  &__input {
+    border: none;
+    border-bottom: 1px solid $color-dark-grey;
+    background-color: transparent;
+  }
+  &__textarea {
+    border: none;
+    border-bottom: 1px solid $color-dark-grey;
+    background-color: transparent;
+    margin-bottom: 40px;
+  }
+  &__button {
+    align-self: flex-end;
+    padding: 13px 53px;
+    width: fit-content;
+    background-color: transparent;
+    border: 1px solid $color-dark-grey;
+    cursor: pointer;
+  }
+}
+
