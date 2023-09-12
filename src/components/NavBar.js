@@ -1,5 +1,6 @@
 import React from "react";
-import {Link} from "react-scroll";
+import {Link as ScrollLink} from "react-scroll";
+import {Link as RouterLink} from 'react-router-dom';
 
 const NavBar = () => {
 
@@ -8,19 +9,19 @@ const NavBar = () => {
             <nav>
                 <ul className='nav__menu'>
                     <li className='nav__item'>
-                       <Link to='hero' smooth={true} duration={250}>Start</Link>
+                       <RouterLink to='/' smooth={true} duration={250}>Start</RouterLink>
                     </li>
                     <li className='nav__item'>
-                        <Link to='whatIsAbout' smooth={true} duration={250}>O co chodzi ?</Link>
+                        <ScrollLink to='whatIsAbout' smooth={true} duration={250}>O co chodzi ?</ScrollLink>
                     </li>
                     <li className='nav__item'>
-                        <Link to='aboutUs' smooth={true} duration={250}>O nas</Link>
+                        <ScrollLink to='aboutUs' smooth={true} duration={250}>O nas</ScrollLink>
                     </li>
                     <li className='nav__item'>
-                        <Link to='organizations' smooth={true} duration={250}>Fundacja i organizacje</Link>
+                        <ScrollLink to='organizations' smooth={true} duration={250}>Fundacja i organizacje</ScrollLink>
                     </li>
                     <li className='nav__item'>
-                        <Link to='contact' smooth={true} duration={250}>Kontakt</Link>
+                        <ScrollLink to='contact' smooth={true} duration={250}>Kontakt</ScrollLink>
                     </li>
                 </ul>
             </nav>

@@ -9,7 +9,11 @@ const LogInOut = () => {
                     Zaloguj
                 </button>
             </Link>
-            <button className={styles.btn}>Załóż konto</button>
+            <Link to="/signup">
+                <button className={styles.btn}>
+                    Załóż konto
+                </button>
+            </Link>
         </div>
     )
 }
