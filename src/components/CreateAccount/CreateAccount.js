@@ -4,23 +4,23 @@ import styles from "./CreateAccount.module.scss"
 import {Link} from 'react-router-dom';
 import contact from "../../assets/Contactbackground.png";
 import decoration from "../../assets/Decoration.png";
-import NavBar from "../NavBar";
-import LogInOut from "../LogInOut";
+import NavBar from "../Global/NavBar";
+import LogInOut from "../Global/LogInOut";
 import auth from "../../Firebase";
+import {useUserAuth} from "../../context/UserAuthContext";
 const SignUp = () => {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [confirmPassword, setConfirmPassword] = useState('');
+    const  {signUp}  = useUserAuth();
 
-    const signUp = (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
-        createUserWithEmailAndPassword(auth, email, password)
-            .then((useCredential) => {
-                console.log(useCredential);
-            }).catch((error) => {
-            console.log(error);
-        })
+        console.log('wiadomość z create account');
+        signUp(email, password);
     }
+
     return (
         <div className={styles.wrapper}>
             <nav className={styles.login__nav}>
@@ -35,7 +35,7 @@ const SignUp = () => {
                     <img className={styles.decoration} src={decoration}/>
                     <form
                         className={styles.form__container}
-                        onSubmit={signUp}
+                        onSubmit={handleSubmit}
                     >
                         <div className={styles.form__data}>
                             <div className={styles.form__field}>
@@ -64,8 +64,8 @@ const SignUp = () => {
                                     type="text"
                                     className={styles.form__input}
                                     id='confirmPassword'
-                                    value={password}
-                                    onChange={ e => setPassword(e.target.value)}
+                                    value={confirmPassword}
+                                    onChange={ e => setConfirmPassword(e.target.value)}
                                 />
                             </div>
                         </div>

@@ -9,7 +9,7 @@ const NavBar = () => {
             <nav>
                 <ul className='nav__menu'>
                     <li className='nav__item'>
-                       <RouterLink to='/' smooth={true} duration={250}>Start</RouterLink>
+                       <RouterLink to='/'>Start</RouterLink>
                     </li>
                     <li className='nav__item'>
                         <ScrollLink to='whatIsAbout' smooth={true} duration={250}>O co chodzi ?</ScrollLink>

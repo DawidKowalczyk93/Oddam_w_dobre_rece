@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./HomeHero.module.scss"
-import NavBar from "../../NavBar";
+import NavBar from "../../Global/NavBar";
 import decoration from "../../../assets/Decoration.png"
-import LogInOut from "../../LogInOut";
+import LogInOut from "../../Global/LogInOut";
 
 const HomeHero = () => {
 

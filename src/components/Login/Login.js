@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from "react";
 import styles from "./Login.module.scss"
-import {Link} from 'react-router-dom';
+import {Link as RouterLink} from 'react-router-dom';
 import contact from "../../assets/Contactbackground.png";
 import decoration from "../../assets/Decoration.png";
-import NavBar from "../NavBar";
-import LogInOut from "../LogInOut";
+import NavBar from "../Global/NavBar";
+import LogInOut from "../Global/LogInOut";
 import  auth  from "../../Firebase"
 import {onAuthStateChanged, signInWithEmailAndPassword, signOut} from "firebase/auth"
 
@@ -89,7 +89,12 @@ const Login = () => {
                             </div>
                         </div>
                         <div className={styles.form__button__wrapper}>
-                        <button className={styles.form__button}>Załóż Konto</button>
+                            <RouterLink to='/signup'>
+                                <button className={styles.form__button}>
+                                    Załóż Konto
+                                </button>
+                            </RouterLink>
+
                         <button
                             className={styles.form__button}
                             type='submit'
